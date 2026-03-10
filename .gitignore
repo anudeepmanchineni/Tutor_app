@@ -1,0 +1,107 @@
+# ============================================================
+# Koshly .gitignore
+# ============================================================
+
+# Environment variables — NEVER commit
+.env
+*.env
+!.env.example
+
+# ------------------------------------------------------------
+# Python / FastAPI Backend
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+*.log
+
+# ------------------------------------------------------------
+# Flutter / Dart Frontend
+# ------------------------------------------------------------
+# Flutter build outputs
+build/
+frontend/build/
+
+# Dart tool cache
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.gen.dart
+
+# iOS
+frontend/ios/Pods/
+frontend/ios/.symlinks/
+frontend/ios/Flutter/Flutter.framework
+frontend/ios/Flutter/Flutter.podspec
+frontend/ios/Runner/GeneratedPluginRegistrant.*
+
+# Android
+frontend/android/.gradle/
+frontend/android/captures/
+frontend/android/gradlew
+frontend/android/gradlew.bat
+frontend/android/local.properties
+frontend/android/**/GeneratedPluginRegistrant.java
+frontend/android/key.properties
+frontend/android/**/*.keystore
+frontend/android/**/*.jks
+
+# Web
+frontend/web/
+
+# macOS
+frontend/macos/Pods/
+frontend/macos/Flutter/GeneratedPluginRegistrant.swift
+frontend/macos/Flutter/Flutter-Debug.xcconfig
+frontend/macos/Flutter/Flutter-Release.xcconfig
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# OS
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# Supabase local dev
+# ------------------------------------------------------------
+supabase/.branches/
+supabase/.temp/
